@@ -151,9 +151,18 @@ public protocol TextViewPasteboardDelegate: AnyObject {
 
 // MARK: - TextView
 //
-open class TextView: UITextView {
+open class TextView: KMPlaceholderTextView {
 
     // MARK: - Aztec Delegates
+   
+     /// Add placeholder text
+     ///
+     /// - Parameter text: Text used to set placeholder
+     ///
+     open func setPlaceHolder(text : String)
+     {
+         self.placeholderLabel.text = text
+     }
 
     /// The media delegate takes care of providing remote media when requested by the `TextView`.
     /// If this is not set, all remove images will be left blank.

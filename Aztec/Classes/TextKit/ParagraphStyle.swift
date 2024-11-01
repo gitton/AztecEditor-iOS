@@ -326,11 +326,11 @@ open class ParagraphStyle: NSMutableParagraphStyle, CustomReflectable {
         }
         
         style.tabStops = tabStops
-        style.lineSpacing = 8
-        style.blockquoteParagraphSpacing = 8
-        style.blockquoteParagraphSpacingBefore = 8
-        style.regularParagraphSpacing = 8
-        style.regularParagraphSpacingBefore = 8
+        style.lineSpacing = 0
+        style.blockquoteParagraphSpacing = 0
+        style.blockquoteParagraphSpacingBefore = 0
+        style.regularParagraphSpacing = 0
+        style.regularParagraphSpacingBefore = 0
         style.textListParagraphSpacing = 0
         style.textListParagraphSpacingBefore = 0
         
